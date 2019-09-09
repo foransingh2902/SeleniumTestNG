@@ -21,15 +21,27 @@ public class dataProviderDemo1 {
 		System.out.print(" Input 2 :" + input2 + "\n");
   }
 
+//can have multiple columns of data also
 	@DataProvider(name = "integerData")
 	public Object[][] getIntData() {
-		Object a[][] = new Object[][] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+		Object a[][] = new Object[][] { { 1, 2, 10 }, { 3, 4, 11 }, { 5, 6, 12 } };
 		return a;
 	}
 
 	@Test(dataProvider = "integerData")
-	public void test2(int a, int b) {
-		System.out.println("a :" + a + " b:" + b + " sum :" + (a + b));
+	public void test2(int a, int b, int c) {
+		System.out.println("a :" + a + " b:" + b + " c : " + c + " sum :" + (a + b + c));
+	}
+
+	@DataProvider(name = "Crossbrowser")
+	public String[] getCredentials() {
+		String[] browser = { "chrome", "firefox", "Internet Explorer" };
+		return browser;
+	}
+
+	@Test(dataProvider = "Crossbrowser")
+	public void test3(String data) {
+		System.out.println("browser name is :" + data);
 	}
 
 }
