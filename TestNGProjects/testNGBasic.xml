@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="allAnnotations.TestCase2ForSuite"/>
+      <!--class name="TestNGDemo.FirstScript"/-->
+      <class name="allAnnotations.TestCase1ForSuite"/>
+      <class name="allAnnotations.BeforeAfterMethodAndClass"/>
+      <class name="TestNGDemo.NewTestDemo3"/>
+      <class name="allAnnotations.TestCase4ForSuite"/>
+      <class name="allAnnotations.BeforeAfterMethodTwice"/>
+      <class name="TestNGDemo.NewTestDemo2"/>
+      <class name="TestNGDemo.NewTestDemo1"/>
+      <class name="allAnnotations.TestCase3ForSuite"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

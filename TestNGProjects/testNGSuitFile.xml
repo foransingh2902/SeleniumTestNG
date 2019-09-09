@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="First Test Suite">
+	<test name="Regression Testing">
+	<classes>
+		<class name="allAnnotations.TestCase1ForSuite"></class>
+		<class name="allAnnotations.TestCase2ForSuite"></class>
+	</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20416" started-at="2019-09-07T21:15:42 IST" finished-at="2019-09-07T21:16:03 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20416" started-at="2019-09-07T21:15:42 IST" finished-at="2019-09-07T21:16:03 IST">
+      <class name="waitTypes.FluentWaitDemo">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:waitTypes.FluentWaitDemo@520a3426]" name="beforeMethod" is-config="true" duration-ms="3995" started-at="2019-09-07T21:15:42 IST" finished-at="2019-09-07T21:15:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:waitTypes.FluentWaitDemo@520a3426]" name="f" duration-ms="13612" started-at="2019-09-07T21:15:46 IST" finished-at="2019-09-07T21:16:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:waitTypes.FluentWaitDemo@520a3426]" name="afterMethod" is-config="true" duration-ms="2718" started-at="2019-09-07T21:16:00 IST" finished-at="2019-09-07T21:16:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- waitTypes.FluentWaitDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

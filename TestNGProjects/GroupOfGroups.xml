@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <!-- even if we don't include define tag then also the given group will run -->
+  	<define name="all">
+  		<include name="regression"></include>
+  		<include name="smoke"></include>
+  		<include name="sanity"></include>
+  		<include name="configuration"></include>
+  		<include name="security"></include>
+  	</define>
+  	<define name="few">
+  		<include name="regression"></include>
+  		<include name="smoke"></include>
+  	</define>
+  	<!-- here we are grouping based on the <define> tag, and run according to the name provided to it -->
+  	<run >
+  		<include  name="all"></include>
+  		<exclude name="few"></exclude>
+  	</run>
+  </groups>
+    <classes>
+      <class name="grouping.ClassC"/>
+      <class name="grouping.ClassB"/>
+      <class name="grouping.ClassA"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
